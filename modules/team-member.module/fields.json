@@ -1,0 +1,56 @@
+[
+  {
+    "label": "Team Member",
+    "name": "team_member",
+    "type": "group",
+    "occurrence": {
+      "default": 3
+    }
+  },
+  {
+    "label": "Image",
+    "name": "image",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "show_loading": true,
+    "button": false,
+    "default": {
+      "loading": "lazy"
+    }
+  },
+  {
+    "label": "Link",
+    "name": "link",
+    "type": "link",
+    "supported_types": ["EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS"],
+    "default": {
+      "url": {
+        "href": "",
+        "type": "EXTERNAL"
+      },
+      "no_follow": false,
+      "open_in_new_tab": false
+    }
+  },
+  {
+    "label": "Link Text",
+    "name": "link_text",
+    "type": "text",
+    "required": true,
+    "default": "Member Name"
+  },
+  {
+    "label": "Span",
+    "name": "span",
+    "type": "text",
+    "required": true,
+    "default": "Member Role"
+  },
+  {
+    "label": "Paragraph",
+    "name": "paragraph",
+    "type": "text",
+    "default": "description"
+  }
+]

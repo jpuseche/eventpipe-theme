@@ -1,0 +1,24 @@
+[
+  {
+    "label": "Secondary Title",
+    "name": "secondary_title",
+    "type": "group",
+    "occurrence": {
+      "default": 3
+    }
+  },
+  {
+    "label": "H6 text",
+    "name": "h6_text",
+    "type": "text",
+    "required": true,
+    "default": "Sub-Title"
+  },
+  {
+    "label": "H2 text",
+    "name": "h2_text",
+    "type": "text",
+    "required": true,
+    "default": "Title"
+  }
+]

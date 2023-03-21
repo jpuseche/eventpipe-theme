@@ -18,23 +18,35 @@
     vertical_alignment="TOP"
   %}
     {% dnd_module
-      path="@hubspot/linked_image",
-      img={
-        "alt": "Coworkers sitting together and smiling outside.",
-        "loading": "disabled",
-        "max_height": 449,
-        "max_width": 605,
-        "size_type": "auto_custom_max",
-        "src": get_asset_url("../images/team-image.jpg")
-      },
-      offset=0,
-      width=6
+      path="../modules/secondary-title",
+      "h6_text"={{ context.h6_text or "Meet our Team" }},
+      "h2_text"={{ context.h2_text or "The EventPipe Leadership Team" }}
     %}
     {% end_dnd_module %}
+
     {% dnd_module
-      path="@hubspot/rich_text",
-      html="<h1>Meet our team</h1><p>Use this page to help your visitors learn more about you. Include images so that folks will recognize you at conferences and events.</p>"
-      offset=6,
+      path="../modules/team-member",
+      image={
+        "alt": context.image_alt or "Tim Brown",
+        "loading": context.image_loading or "disabled",
+        "max_height": context.image_height or 451,
+        "max_width": context.image_width or 605,
+        "size_type": "auto_custom_max",
+        "src": context.image or get_asset_url("../images/team-members/tim-b.png"),
+        "button": true
+      },
+      link={
+        "url":
+          {
+            "type": "EXTERNAL",
+            "href": "/"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+      },
+      "link_text"={{ context.link_text or "Tim Brown" }},
+      "span"={{ context.span or "CEO" }},
+      "paragraph"={{ context.paragraph or "Tim is an experienced and accomplished software executive having served as the head of corporate development and as Chief Financial Officer at Motus, where he led the company through multiple financings and acquisitions. Tim joined Motus after serving as the Chief Financial Officer of ConnectEDU and leading the corporate development/M&amp;A function at EducationDynamics. Tim began his career in investment banking and private equity after graduating from the University of Pennsylvania’s Wharton School of Business." }},
       width=6
     %}
     {% end_dnd_module %}

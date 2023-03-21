@@ -1,0 +1,41 @@
+[
+  {
+    "label": "Main Banner",
+    "name": "main_banner",
+    "type": "group",
+    "occurrence": {
+      "default": 3
+    }
+  },
+  {
+    "label": "Image",
+    "name": "image",
+    "type": "image",
+    "responsive": true,
+    "resizable": true,
+    "show_loading": true,
+    "button": false,
+    "default": {
+      "loading": "lazy"
+    }
+  },
+  {
+    "label": "H1 text",
+    "name": "h1_text",
+    "type": "text",
+    "required": true,
+    "default": "Title"
+  },
+  {
+    "label": "H5 text",
+    "name": "h5_text",
+    "type": "text",
+    "default": "Sub-Title"
+  },
+  {
+    "label": "Button text",
+    "name": "button_text",
+    "type": "text",
+    "default": "Button text"
+  }
+]
